@@ -19,7 +19,7 @@
       "success_after_failures": true,
       "first_success_after_failures": "2026-09-14T09:08:15Z",
       "severity": "high",
-      "triage_note": "Review successful logon context immediately; this pattern may indicate account compromise."
+      "triage_note": "Review the successful login and investigate the account."
     }
   ]
 }
