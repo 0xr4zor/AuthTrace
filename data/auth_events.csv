@@ -1,0 +1,13 @@
+timestamp,event_id,username,source_ip,host,outcome,detail
+2026-09-14T09:00:00Z,4625,j.smith,10.20.5.77,WS-014,Failure,Unknown user or bad password
+2026-09-14T09:01:10Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:02:20Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:03:30Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:04:40Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:05:50Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:06:40Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:07:30Z,4625,j.smith,10.20.5.77,WS-014,Failure,Bad password
+2026-09-14T09:08:15Z,4624,j.smith,10.20.5.77,WS-014,Success,Interactive logon
+2026-09-14T09:12:00Z,4625,m.lee,10.20.5.44,WS-014,Failure,Bad password
+2026-09-14T09:13:00Z,4624,m.lee,10.20.5.44,WS-014,Success,Interactive logon
+2026-09-14T10:20:00Z,4625,a.patel,10.20.5.18,WS-022,Failure,Bad password

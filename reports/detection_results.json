@@ -1,0 +1,25 @@
+{
+  "dataset": "data/auth_events.csv",
+  "event_count": 12,
+  "threshold": 5,
+  "window_minutes": 10,
+  "finding_count": 1,
+  "findings": [
+    {
+      "source_ip": "10.20.5.77",
+      "failure_count_in_window": 8,
+      "window_start": "2026-09-14T09:00:00+00:00",
+      "window_end": "2026-09-14T09:07:30+00:00",
+      "accounts": [
+        "j.smith"
+      ],
+      "hostnames": [
+        "WS-014"
+      ],
+      "success_after_failures": true,
+      "first_success_after_failures": "2026-09-14T09:08:15Z",
+      "severity": "high",
+      "triage_note": "Review successful logon context immediately; this pattern may indicate account compromise."
+    }
+  ]
+}

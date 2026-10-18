@@ -1,0 +1,18 @@
+# Detection 1: repeated failed logons by source IP within a 10-minute window.
+# Assumes Windows Security events are parsed into EventCode, src_ip, user, host.
+index=windows_security EventCode=4625
+| bin _time span=10m
+| stats count as failed_logons values(user) as users values(host) as hosts by _time src_ip
+| where failed_logons >= 5
+| sort - failed_logons
+
+# Investigation pivot: look for successful logons from flagged source IPs.
+# Replace the IP below with an IP found in the first search.
+index=windows_security EventCode=4624 src_ip="10.20.5.77"
+| table _time user src_ip host Logon_Type
+| sort _time
+
+# Caveat: binning into fixed 10-minute buckets can miss activity that crosses
+# a bucket boundary. Production detections should be tested against local
+# telemetry and may use streamstats/transaction or a scheduled correlation search.
+
